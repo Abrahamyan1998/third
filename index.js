@@ -2,13 +2,19 @@
 function say(x){
     if(typeof x == "number" ){
         if(x%2==0){
-            console.log(`${x}-zuyg e`);
+            for(let i = 0; i<x; i++){
+                if(i%2==0)
+                console.log(`${i}-zuyg e`);
+            }
             alert("the number is even")
         }
      
         if (x%2!==0){
+            for(let i = 0; i<x; i++){
+                if(i%2!==0)
+                console.log(`${i}-kent e e`);
+            }
             alert("the number is odd")
-            console.log(`${x}-kent e`);
         }
     }
     else{
